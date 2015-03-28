@@ -1,0 +1,12 @@
+prefix=/home/slomo/cerbero/dist/android_armv7
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+incdir=${prefix}/include
+
+Name: librtmp
+Description: RTMP implementation
+Version: v2.3
+Requires: gnutls
+URL: http://rtmpdump.mplayerhq.hu
+Libs: -L${libdir} -lrtmp -lz
+Cflags: -I${incdir}
